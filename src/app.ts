@@ -1,6 +1,7 @@
 import { createBot, MemoryDB, createProvider } from '@bot-whatsapp/bot'
 import { TelegramProvider } from '@builderbot-plugins/telegram'
 import { BaileysProvider } from '@bot-whatsapp/provider-baileys'
+import QRPortalWeb from '@bot-whatsapp/portal'
 
 import AIClass from './services/ai';
 import flows from './flows';
@@ -17,7 +18,7 @@ const main = async () => {
         provider,
         flow: flows
     }, { extensions: { ai } })
-
+    QRPortalWeb()
 }
 
 main()
