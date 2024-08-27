@@ -6,7 +6,7 @@ import QRPortalWeb from '@bot-whatsapp/portal'
 import AIClass from './services/ai';
 import flows from './flows';
 
-const ai = new AIClass('sk-proj-pP7mxLpjcPS9Pt2iEgpIT3BlbkFJKD0nKExjHaCdXtho7vQm', 'gpt-3.5-turbo-16k')
+const ai = new AIClass('API_CHATGPT', 'gpt-3.5-turbo-16k')
 
 const main = async () => {
 
